@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Indie+Flower&family=Inter&family=Josefin+Sans:wght@500&display=swap');
+body{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    height: 50px;
+    width: 60%;
+    margin: 15px 25% 0px 20%;
+    background: rgba(255, 255, 255, 0.521);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgb(172, 172, 172);
+}
+
+header img{
+    margin-left: 70%;
+    margin-top: 6px;
+    width: 50px;
+    height: 70%;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+}
+
+header input{
+    width: 100%;
+    font-family: "Fredoka One";
+    font-size: 16px;
+    color: rgb(192, 192, 192);
+    border: 0;
+    outline: 0;
+    margin: 16px 0px 0px 20px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    display: block;
+}
+
+header ion-icon{
+    font-size: 3rem;
+    color: rgb(192, 192, 192);
+    margin: 0px 0px 15px 10px ;
+}
+
+main{
+    padding-top: 10vh;
+    padding-bottom: 10px;
+}
+
+h1, h2, h3 ,h4, p{
+    font-family: Josefin Sans;
+    margin-left: 23vw;
+    margin-right: 23vw;
+    text-align: justify;
+}
+
+h1{
+    font-size: 3rem;
+    color: rgb(34, 34, 34);
+}
+
+h2{
+    font-size: 1.2rem;
+}
+
+p{
+    margin-bottom: 50px;
+    color: rgb(101, 108, 128);
+    font-family: inter;
+    font-size: 0.8rem;
+    line-height: 1.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.like{
+    position: fixed;
+    top: 40%;
+    left: 5%;
+    margin: 10px;
+    font-size: 1.6rem;
+    color: rgb(182, 182, 182);
+    cursor: pointer;
+}
+.like a{
+    position: fixed;
+    top: 42%;
+    padding: 5px 0px 0px 12px;
+    color: rgb(160, 160, 160);
+    font-family: Fredoka one;
+    font-size: 1rem;
+}
+
+.share{
+    position: fixed;
+    top: 45%;
+    left: 5%;
+    margin: 10px;
+    font-size: 1.6rem;
+    color: rgb(182, 182, 182);
+    cursor: pointer;
+}
+.share a{
+    position: fixed;
+    top: 47%;
+    padding: 5px 0px 0px 40px;
+    color: rgb(161, 161, 161);
+    font-family: Fredoka one;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body::-webkit-scrollbar {
+  width: 9px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(136, 136, 136, 0.555);  
+    border-radius: 20px;                              
+    border: 3px solid rrgba(136, 136, 136, 0.555);    
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    h1, h2, h3 ,h4, p{
+        font-family: Josefin Sans;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    p{
+        font-family: inter;
+    }
+
+    header{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    header input{
+        width: 150px;
+        margin-left: 50px;
+        z-index: -1;
+    }
+
+    header ion-icon{
+        position: fixed;
+        font-size: 2rem;
+        margin: 0px 0px 0px 5px ;
+    }
+    
+    .share, .like{
+        visibility: hidden;
+    }
+}
