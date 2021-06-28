@@ -18,8 +18,8 @@ function search(event) {
   }  
   if(searchstring != searchvalue){
     document.getElementById('searchresultpadd').style.padding = '0px';
-    searchvalue[i].parentElement.style.display = "block";
     document.getElementById('home').style.display = 'block';
+    searchvalue[i].parentElement.style.display = "block";
     if(searchstring == ''){
       document.getElementById('titlebox').style.display = 'block';
     }
