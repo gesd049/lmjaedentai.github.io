@@ -5,26 +5,25 @@ function search(event) {
   searchstring = searchstring.toLowerCase();
   let searchvalue = document.getElementsByTagName('h2');
 
-  document.getElementById('titlebox').style.display = 'none';
+  document.getElementById('intro').style.display = 'none';
   for (i = 0; i < searchvalue.length; i++) { 
     if (!searchvalue[i].innerHTML.toLowerCase().includes(searchstring)) {
       searchvalue[i].parentElement.style.display = "none";
     }
     else {
-      document.getElementById('searchresultpadd').style.padding = '20px';
+      document.getElementById('searchresultpadding').style.padding = '20px';
       searchvalue[i].parentElement.style.display = "block"; 
-      document.getElementById('home').style.display = 'block';
     }
   }  
   if(searchstring != searchvalue){
-    document.getElementById('searchresultpadd').style.padding = '0px';
-    document.getElementById('home').style.display = 'block';
+    document.getElementById('searchresultpadding').style.padding = '0px';
     searchvalue[i].parentElement.style.display = "block";
     if(searchstring == ''){
-      document.getElementById('titlebox').style.display = 'block';
+      document.getElementById('intro').style.display = 'block';
     }
   }
 }
+
 
 // style
 function liked(){
