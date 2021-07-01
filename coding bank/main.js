@@ -1,4 +1,4 @@
-
+document.body.contentEditable=false;
 // main
 function search(event) {
   let searchstring = document.getElementById('searchbar').value;
