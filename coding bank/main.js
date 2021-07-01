@@ -32,4 +32,4 @@ function liked(){
 
 function shared(){
   document.getElementById('share').style.color = "rgb(0, 255, 115)";
-}
+} 
