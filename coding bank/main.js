@@ -27,9 +27,9 @@ function search(event) {
 
 // style
 function liked(){
-  document.getElementById('heart').style.color = "red";
+  document.getElementById('hearticon').style.color = "red";
 }
 
 function shared(){
-  document.getElementById('share').style.color = "rgb(0, 255, 115)";
+  document.getElementById('shareicon').style.color = "rgb(0, 255, 115)";
 } 
