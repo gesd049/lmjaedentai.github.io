@@ -1,0 +1,19 @@
+body{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    background: url('https://i.pinimg.com/originals/af/8c/18/af8c18ba0f83fd65adf0256364af5ac0.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+#spike{
+    display: block;
+    width: 371px;
+    height: 315px;
+    margin: 40vh auto 0 auto;
+}
