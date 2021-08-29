@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
 body{
     border: 0;
     padding: 0;
@@ -7,14 +9,105 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center;	
+}
+
+header{
+    display: flex;
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    height: 60px;
+    width: 40%;
+    min-width: 400px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.897);
+}
+
+header h1{
+    margin: 14px 0 0 ;
+    text-align: center;
+    display: block;
+    font-family: lilita one;
+    font-size: 3rem;
+}
+
+header img{
+    position: absolute;
+    width: 50px;
+    padding: 5px;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+header img:hover{
+    cursor: pointer;
+    width: 55px;
+}
+
+header #aboutus{
+    position: absolute;
+    left: 89%;
+    top: 0%;
 }
 
 #spike{
     display: block;
     width: 371px;
     height: 315px;
-    margin: 40vh auto 0 auto;
+    margin: 7vh auto 0 auto;
+    cursor: pointer;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+#scoreboard{
+    text-align: center;
+    margin-top: 30vh;
+    font-family: lilita one;
+    font-size: 5rem;
+    text-shadow: 0px 10px 10px #ffffff;
+}
+
+footer{
+    bottom: 0%;
+    position: absolute;
+    display: block;
+}
+
+footer #tqblas{
+    width: 70px;
+    padding: 10px;
+    opacity: 70%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+footer #tqblas:hover{
+    width: 80px;
+    opacity: 100%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+    header{
+        height: 60px;
+        width: 90%;
+        min-width: 0;
+        left: 5%;
+        right: 5%;
+        align-self: center;
+    }
+}
