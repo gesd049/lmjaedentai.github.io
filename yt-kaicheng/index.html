@@ -18,12 +18,14 @@ let offset = window.pageYOffset;
 parallax.style.backgroundPositionY = offset
 * 0.2 + "px";
 })
+
 function openNav() {
 document.getElementById("mySidenav").style.width = "80%";
 }
 function closeNav() {
 document.getElementById("mySidenav").style.width = "0";
 }
+
 mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {

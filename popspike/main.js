@@ -1,6 +1,7 @@
 var spike = document.getElementById("spike");
 var audio = new Audio('./asset/pop.mp3');
 var scoreboard = document.getElementById('scoreboard');
+var menu = document.getElementById('menu');
 
 var score = Cookies.get('score');
 scoreboard.innerHTML = score;
@@ -9,6 +10,7 @@ if(scoreboard.innerHTML == 'NaN' || scoreboard.innerHTML == 'undefined'){ //if n
     Cookies.set('score',0);
     location.reload();
 }
+
 
 // mouseclick & touchscreen event
 spike.addEventListener("mousedown", function(){
@@ -32,4 +34,26 @@ function increaseScore(){
     score++;
     scoreboard.innerHTML = score;
     Cookies.set('score', score);
+}
+
+
+//ui
+function backtohome(){
+    if(menu.style.height == '70vh'){
+        menu.style.height = '0vh';
+    }
+}
+
+function openmenu(){
+    if(menu.style.height != '70vh'){
+        menu.style.height = '70vh';
+    }
+    else{
+        menu.style.height = '0';
+    }
+    
+}
+
+function openleaderboard(){
+    window.alert('coming soon')
 }
