@@ -10,6 +10,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;	
+    overflow: hidden;
 }
 
 header{
@@ -49,6 +50,33 @@ header #aboutus{
     position: absolute;
     left: 89%;
     top: 0%;
+}
+
+#menu{
+    position: fixed;
+    height: 70vh;
+    width: 40%;
+    min-width: 400px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.897);
+    margin: 3vh 0 0;
+}
+
+#menu p{
+    position: relative;
+    padding: 20px 20px 0 100px;
+    margin-top: 10px;
+    font-family: lilita one;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+#menu img{
+    position: absolute;
+    width: 80px;
+    padding: 10px 0px 0px 20px;
+    margin-top: 5px;
+    transition: 0.5s;
 }
 
 #spike{
